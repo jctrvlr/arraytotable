@@ -30,6 +30,14 @@ class htmlArray extends html{
   }
 
 }
+$array1 = array(
+  "1" => "apple",
+  "2" => "banana",
+  "3" => "orange",
+  "4" => "lemon");
+
+$obj = new htmlArray;
+echo $obj->getArray($array1);
 
 
 ?>
