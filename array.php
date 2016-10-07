@@ -9,13 +9,7 @@ class html {
 	}
 }
 class htmlArray extends html{
-  public function numElements(array $array) {
-    $num_ele = count($array);
-    return $num_ele;
-  }
   public function getArray(array $array) {
-	$num_ele = numElements($array);
-
 	$this->html_table = '<table border="1 cellspacing="0" cellpadding="2"><tr>';
 	foreach($array as $row) {
 	  $this->html_table .= "<tr>";
