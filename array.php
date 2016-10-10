@@ -10,28 +10,32 @@ class html {
 }
 class htmlArray extends html{
   public function getArray(array $array) {
-	$this->html_table = '<table border="1 cellspacing="0" cellpadding="2"><tr>';
-	foreach($array as $row) {
-	  $this->html_table .= "<tr>";
-	  foreach($row as $column) {
-	    $this->html_table .= "<td>$column</td>";
+	$this->html = '<table border="1 cellspacing="0" cellpadding="2">';
+	foreach($array as $row=>$value) {
+ 	  $this->html .= '<tr>';
+	  foreach($value as $key=>$value2){
+	    $this->html .= '<td>' . $value2 . '</td>'; 
 	  }
-	  $this->html_table .= "</tr>";
-	}
-	$this->html_table .= "</table>";
-
-	return $this->html_table;
+	  $this->html .= '</tr>';
   }
-
+  $this->html .= '</table>';
+  return $this->html;
 }
-$array1 = array(
-  "1" => "apple",
-  "2" => "banana",
-  "3" => "orange",
-  "4" => "lemon");
+}
+$array = array 
+   (
+         array('Office Space' , 'Comedy' , 'Mike Judge' ),
+	       array('Matrix' , 'Action' , 'Andy / Larry Wachowski' ),
+	             array('Lost In Translation' , 'Comedy / Drama' , 'Sofia
+		     Coppola' ),
+		           array('A Beautiful Mind' , 'Drama' , 'Ron Howard' ),
+			         array('Napoleon Dynamite' , 'Comedy' , 'Jared
+				 Hess' )
+				    );
 
 $obj = new htmlArray;
-echo $obj->getArray($array1);
+
+echo $obj->getArray($array);
 
 
 ?>
