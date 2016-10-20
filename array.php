@@ -13,7 +13,7 @@ class htmlArray extends html{
 	$this->html = '<table border="1 cellspacing="0" cellpadding="2">';
 	$this->html .= '<tr>';
 	$first = true;
-	foreach($array[1] as $key=>$value){
+	foreach($array[0] as $key=>$value){
 		$this->html .= '<th>' . $value . '</th>';
 	  }
 	$this->html .= '</tr>';
