@@ -34,12 +34,13 @@ class htmlArray extends html{
 }
 $array = array 
    (
-         array('Office Space' , 'Comedy' , 'Mike Judge' ),
-	       array('Matrix' , 'Action' , 'Andy / Larry Wachowski' ),
-	             array('Lost In Translation' , 'Comedy / Drama' , 'Sofia
+     array('Movie name', 'Genre', 'Director'),
+     array('Office Space' , 'Comedy' , 'Mike Judge' ),
+     array('Matrix' , 'Action' , 'Andy / Larry Wachowski' ),
+     array('Lost In Translation' , 'Comedy / Drama' , 'Sofia
 		     Coppola' ),
-		           array('A Beautiful Mind' , 'Drama' , 'Ron Howard' ),
-			         array('Napoleon Dynamite' , 'Comedy' , 'Jared
+     array('A Beautiful Mind' , 'Drama' , 'Ron Howard' ),
+     array('Napoleon Dynamite' , 'Comedy' , 'Jared
 				 Hess' )
 				    );
 
